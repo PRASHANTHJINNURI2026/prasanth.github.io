@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prasanth Jinnuri - Senior AI Integrated Backend Engineer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fb;
+      color: #1f2937;
+      line-height: 1.5;
+      padding: 40px;
+    }
+
+    .resume {
+      max-width: 1100px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      display: grid;
+      grid-template-columns: 320px 1fr;
+    }
+
+    .sidebar {
+      background: linear-gradient(180deg, #0f172a, #111827);
+      color: white;
+      padding: 40px 28px;
+    }
+
+    .main {
+      padding: 40px;
+    }
+
+    .name {
+      font-size: 34px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .role {
+      font-size: 16px;
+      color: #cbd5e1;
+      margin-bottom: 28px;
+      font-weight: 500;
+    }
+
+    .section {
+      margin-bottom: 28px;
+    }
+
+    .section-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: #38bdf8;
+    }
+
+    .contact p,
+    .skills li {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #e5e7eb;
+    }
+
+    .skills ul {
+      list-style: none;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.08);
+      padding: 7px 12px;
+      border-radius: 999px;
+      margin: 6px 6px 0 0;
+      font-size: 12px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .summary {
+      background: #eff6ff;
+      border-left: 5px solid #2563eb;
+      padding: 22px;
+      border-radius: 12px;
+      margin-bottom: 32px;
+    }
+
+    .summary p {
+      font-size: 15px;
+      color: #334155;
+    }
+
+    .main-section {
+      margin-bottom: 36px;
+    }
+
+    .main-title {
+      font-size: 22px;
+      color: #0f172a;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 10px;
+      font-weight: 800;
+    }
+
+    .main-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 60px;
+      height: 4px;
+      border-radius: 10px;
+      background: #2563eb;
+    }
+
+    .experience {
+      margin-bottom: 28px;
+    }
+
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .job-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .company {
+      font-size: 15px;
+      color: #2563eb;
+      font-weight: 600;
+    }
+
+    .duration {
+      font-size: 13px;
+      color: #64748b;
+      font-weight: 600;
+    }
+
+    .experience ul {
+      padding-left: 20px;
+    }
+
+    .experience li {
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #334155;
+    }
+
+    .project-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 18px;
+    }
+
+    .project-title {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #0f172a;
+    }
+
+    .project-tech {
+      font-size: 13px;
+      color: #2563eb;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .project-card ul {
+      padding-left: 18px;
+    }
+
+    .project-card li {
+      font-size: 14px;
+      margin-bottom: 8px;
+      color: #475569;
+    }
+
+    .education-item {
+      margin-bottom: 16px;
+    }
+
+    .education-item h4 {
+      font-size: 16px;
+      color: #111827;
+      margin-bottom: 4px;
+    }
+
+    .education-item p {
+      font-size: 14px;
+      color: #64748b;
+    }
+
+    @media(max-width: 900px) {
+      .resume {
+        grid-template-columns: 1fr;
+      }
+
+      body {
+        padding: 16px;
+      }
+
+      .sidebar,
+      .main {
+        padding: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <aside class="sidebar">
+      <div class="name">Prasanth Jinnuri</div>
+      <div class="role">Senior AI-Integrated Backend Engineer</div>
+
+      <div class="section contact">
+        <div class="section-title">Contact</div>
+        <p>📍 Telangana, India</p>
+        <p>📧 prashanthjinnuri2026@gmail.com</p>
+        <p>📱 +91-9010290115</p>
+      </div>
+
+      <div class="section skills">
+        <div class="section-title">Core Skills</div>
+        <div class="badge">Java 8/11/21</div>
+        <div class="badge">Spring Boot</div>
+        <div class="badge">Spring AI</div>
+        <div class="badge">Microservices</div>
+        <div class="badge">Kafka</div>
+        <div class="badge">Redis</div>
+        <div class="badge">OpenSearch</div>
+        <div class="badge">AWS</div>
+        <div class="badge">Docker</div>
+        <div class="badge">Kubernetes</div>
+        <div class="badge">OAuth2</div>
+        <div class="badge">JWT</div>
+        <div class="badge">Keycloak</div>
+        <div class="badge">CI/CD</div>
+        <div class="badge">LLM Integrations</div>
+        <div class="badge">RAG Workflows</div>
+        <div class="badge">gRPC</div>
+        <div class="badge">JUnit 5</div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Cloud & DevOps</div>
+        <ul class="skills">
+          <li>AWS Lambda</li>
+          <li>S3, SNS, SQS</li>
+          <li>CloudWatch</li>
+          <li>GitLab CI/CD</li>
+          <li>SonarQube</li>
+          <li>Liquibase & Flyway</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Databases</div>
+        <ul class="skills">
+          <li>MySQL</li>
+          <li>Redis</li>
+          <li>OpenSearch</li>
+          <li>DynamoDB</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="summary">
+        <p>
+          Senior AI-Integrated Backend Engineer with 8+ years of experience building scalable,
+          secure, and cloud-native enterprise applications using Java, Spring Boot, Microservices,
+          Generative AI, and AWS technologies. Proven expertise in AI-powered moderation systems,
+          distributed architectures, event-driven systems, and production-grade backend platforms.
+        </p>
+      </section>
+
+      <section class="main-section">
+        <h2 class="main-title">Professional Experience</h2>
+
+        <div class="experience">
+          <div class="experience-header">
+            <div>
+              <div class="job-title">Senior Java Developer</div>
+              <div class="company">Electronic Arts - P99 SOFT Pvt Ltd</div>
+            </div>
+            <div class="duration">Jan 2024 – Present | Hyderabad</div>
+          </div>
+          <ul>
+            <li>Designed AI-driven moderation platforms using Spring AI, OpenAI APIs, and scalable asynchronous microservices.</li>
+            <li>Built enterprise-grade backend systems leveraging Kafka, Redis, OpenSearch, AWS SQS/SNS, and Docker.</li>
+            <li>Led architecture discussions, secure API development, and observability implementation using OpenTelemetry and Sumo Logic.</li>
+            <li>Maintained 90%+ test coverage with JUnit 5, PIT mutation testing, JaCoCo, and SonarQube.</li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <div class="experience-header">
+            <div>
+              <div class="job-title">Senior Software Engineer</div>
+              <div class="company">Souxe Technologies Pvt Ltd</div>
+            </div>
+            <div class="duration">May 2020 – Sep 2023 | Bangalore</div>
+          </div>
+          <ul>
+            <li>Developed enterprise banking workflows and backend services using Java, Spring Boot, and Backbase Studio.</li>
+            <li>Implemented API integrations, PL/SQL validations, and scalable banking modules.</li>
+            <li>Collaborated in Agile teams for sprint planning, requirement analysis, and production releases.</li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <div class="experience-header">
+            <div>
+              <div class="job-title">Java Developer</div>
+              <div class="company">Epam Systems</div>
+            </div>
+            <div class="duration">Jun 2019 – Mar 2020 | Hyderabad</div>
+          </div>
+          <ul>
+            <li>Built Spring MVC backend modules for insurance workflow management and reporting systems.</li>
+            <li>Integrated external services and implemented RBAC-based security controls.</li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <div class="experience-header">
+            <div>
+              <div class="job-title">Associate Consultant</div>
+              <div class="company">Capgemini India Pvt Ltd</div>
+            </div>
+            <div class="duration">May 2016 – Apr 2019 | Hyderabad</div>
+          </div>
+          <ul>
+            <li>Developed Spring Boot APIs and financial backend systems for HSBC and TIAA-CREF.</li>
+            <li>Worked on distributed backend architecture, AWS integrations, Kafka messaging, and Docker deployments.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="main-section">
+        <h2 class="main-title">Highlighted Projects</h2>
+
+        <div class="project-card">
+          <div class="project-title">EA Forums – AI Driven Content Moderation Platform</div>
+          <div class="project-tech">Java 21 • Spring Boot • Spring AI • OpenAI • Perspective API • AWS • MySQL</div>
+          <ul>
+            <li>Architected a real-time AI moderation platform for detecting toxic, abusive, and spam content.</li>
+            <li>Built hybrid moderation pipelines combining LLM classification with ML scoring systems.</li>
+            <li>Implemented queue-driven asynchronous processing for scalable high-throughput moderation.</li>
+            <li>Enabled observability and audit pipelines using Sumo Logic and Snowflake integrations.</li>
+            <li>Optimized toxicity thresholds and prompt strategies to reduce noisy flagging behavior.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">Enterprise Customer Support Data Ingestion Platform</div>
+          <div class="project-tech">Spring Boot • Salesforce APIs • AWS S3/SQS/SNS • OpenTelemetry • Docker</div>
+          <ul>
+            <li>Built scalable ingestion pipelines integrating Salesforce streaming events and Helpshift APIs.</li>
+            <li>Designed fault-tolerant event processing with replay handling and deduplication mechanisms.</li>
+            <li>Implemented secure PII masking and end-to-end monitoring for production reliability.</li>
+            <li>Integrated OpenTelemetry tracing and observability across distributed services.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">Petition Assistant & Case Data Loader</div>
+          <div class="project-tech">Java 21 • Spring Boot • OpenSearch • AWS Lambda • AI Workflows</div>
+          <ul>
+            <li>Designed AI-powered moderation backend using Spring Boot and LLM integrations.</li>
+            <li>Built REST APIs, OpenSearch workflows, and AWS Lambda ingestion pipelines.</li>
+            <li>Implemented automated petition classification and categorization microservices.</li>
+            <li>Managed CI/CD quality gates using SonarQube, JaCoCo, and Spotless.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">Forums Moderation & Khoros Event Loader</div>
+          <div class="project-tech">Spring Boot • AWS SQS • AWS S3 • gRPC • AI Image Moderation</div>
+          <ul>
+            <li>Developed AI-powered image moderation microservices using Java 21 and Spring Boot.</li>
+            <li>Integrated AWS SQS, S3, and internal gRPC services for asynchronous processing.</li>
+            <li>Built scalable content-classification workflows aligned with EA Orion architecture.</li>
+            <li>Maintained production-grade reliability with 90%+ automated test coverage.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">Orion Orbit – Real Time Player Experience Platform</div>
+          <div class="project-tech">Spring Boot • Redis • OpenSearch • OAuth2 • Liquibase • AWS</div>
+          <ul>
+            <li>Led backend development for scalable microservices processing real-time gaming experience data.</li>
+            <li>Built secure REST APIs with Redis caching and OpenSearch integrations.</li>
+            <li>Managed schema versioning, AWS integrations, and deployment quality pipelines.</li>
+            <li>Contributed to architecture reviews, mentoring, and CI/CD quality enforcement.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">Game Integrations (GI)</div>
+          <div class="project-tech">Spring Boot • Kafka • Event Driven Architecture • API Integrations</div>
+          <ul>
+            <li>Led backend integrations with partner studios using scalable event-driven microservices.</li>
+            <li>Designed Kafka-based player activity processing and schema migration workflows.</li>
+            <li>Collaborated with business stakeholders to deliver resilient platform integrations.</li>
+            <li>Participated in architecture reviews and end-to-end production testing.</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <section class="main-section">
+        <h2 class="main-title">Education</h2>
+
+        <div class="education-item">
+          <h4>Bachelor of Technology in Computer Science Engineering</h4>
+          <p>Sri Prakash College of Engineering • 2015</p>
+        </div>
+
+        <div class="education-item">
+          <h4>Intermediate Education</h4>
+          <p>Aditya Junior College • 2011</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
